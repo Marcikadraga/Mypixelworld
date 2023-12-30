@@ -17,7 +17,7 @@ function drawImage(canvas, sizeOfPixel, colors) {
 function MarioWorldAnimation() {
 
   const data = drawings;
-  console.log(typeof (data))
+
   //circle-1
   const pipe1 = useRef(null);
   const pipe2 = useRef(null);
