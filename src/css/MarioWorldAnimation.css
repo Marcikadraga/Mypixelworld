@@ -1,19 +1,22 @@
+body{
+  background-color: blueviolet;
+}
+
 .circle-container {
   width: 100%;
   height: 100vh;
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.circle-1{
+.circle-1 {
   width: 501px;
   height: 501px;
   background-color: rgb(76, 233, 76);
   border-radius: 50%;
   position: fixed;
-  bottom: 350px;
+  bottom: -350px;
   animation: circle1Animation 100s linear infinite;
   z-index: 4;
   transform: rotate(20deg);
@@ -25,7 +28,7 @@
   background-color: rgb(76, 233, 76);
   border-radius: 50%;
   position: fixed;
-  bottom: 350px;
+  bottom: -350px;
   animation: circle2Animation 100s linear infinite;
   z-index: 3;
   transform: rotate(20deg);
@@ -37,7 +40,7 @@
   background-color: rgb(76, 233, 76);
   border-radius: 50%;
   position: fixed;
-  bottom: 350px;
+  bottom: -350px;
   animation: circle3Animation 10s linear infinite;
   z-index: 3;
   transform: rotate(20deg);
@@ -49,48 +52,73 @@
   background-color: rgb(76, 233, 76);
   border-radius: 50%;
   position: fixed;
-  bottom: 350px;
-  animation: circle3Animation 10s linear infinite;
-  z-index: 3;
-  transform: rotate(20deg);
+  bottom: -350px;
+  animation: circle6Animation 100s linear infinite;
+  z-index: 0;
+  transform: rotate(200deg);
 }
 
- @keyframes circle1Animation {
+.circle-7 {
+  width: 550px;
+  height: 550px;
+  background-color: rgb(76, 233, 76);
+  border-radius: 50%;
+  position: fixed;
+  bottom: -350px;
+  animation: circle6Animation 500s linear infinite;
+  z-index: 0;
+  transform: rotate(200deg);
+}
+
+@keyframes circle1Animation {
   from {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
+
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
 
 @keyframes circle2Animation {
   from {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
-  to {
-    transform: rotate(-360deg);
-  }
-} 
 
- @keyframes circle3Animation {
-  from {
-    transform: rotate(0deg);
-  }
   to {
-    transform: rotate(360deg);
+      transform: rotate(-360deg);
   }
-} 
-
-#pipe-1{
-  position: absolute;
-  top: 326px;
-  left: 448px;
-  transform: rotate(125deg);
-  z-index: 5;
 }
 
-#pipe-2{
+@keyframes circle3Animation {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes circle6Animation {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+#pipe-1 {
+  position: absolute;
+  top: 332px;
+  left: 443px;
+  transform: rotate(125deg);
+  z-index: 4;
+}
+
+#pipe-2 {
   position: absolute;
   top: -142px;
   left: -216px;
@@ -98,107 +126,192 @@
   z-index: 4;
 }
 
-#cube-1{
+#Mario_wc{
+  position: absolute;
+  top: 463px;
+  left: 768px;
+  transform: rotate(125deg);
+  z-index: 4;
+}
+
+#cube-1 {
   position: absolute;
   top: -472px;
   left: 67px;
   transform: rotate(-11deg);
 }
 
-#cube-2{
+#cube-2 {
   position: absolute;
   top: -476px;
   left: 261px;
   transform: rotate(7deg);
 }
 
-#cube-3{
+#cube-3 {
   position: absolute;
   top: -429px;
   left: 446px;
   transform: rotate(23deg);
 }
 
-#flower-1{
+#cube-4 {
+  position: absolute;
+  top: 296px;
+  left: 720px;
+  transform: rotate(140deg);
+}
+
+#flower-1 {
   position: absolute;
   top: -631px;
   left: 282px;
   transform: rotate(7deg);
 }
 
-#mushroom-1{
+#flower-2 {
+  position: absolute;
+  top: 119px;
+  left: 479px;
+  transform: rotate(80deg);
+}
+
+#mushroom-1 {
   position: absolute;
   top: -139px;
   left: 14px;
   transform: rotate(-21deg);
 }
 
-#mushroom-2{
+#mushroom-2 {
   position: absolute;
   top: 483px;
   left: 151px;
   transform: rotate(182deg);
 }
 
-#cloud1{
+#cloud1 {
   position: absolute;
   top: -494px;
   left: -173px;
   transform: rotate(-29deg);
 }
 
-#cloud2{
+#cloud2 {
   position: absolute;
-    top: -494px;
-    left: 532px;
-    transform: rotate(29deg);
+  top: -494px;
+  left: 532px;
+  transform: rotate(29deg);
 }
 
-#cloud3{
+#cloud3 {
   position: absolute;
   top: 169px;
   left: -619px;
   transform: rotate(270deg);
 }
 
-#cloud4{
+#cloud4 {
   position: absolute;
   top: 169px;
   left: 942px;
   transform: rotate(90deg);
 }
 
-#cloud5{
+#cloud5 {
   position: absolute;
   top: 874px;
   left: -173px;
   transform: rotate(207deg);
 }
 
-#cloud6{
+#cloud6 {
   position: absolute;
   top: 874px;
   left: 532px;
   transform: rotate(150deg);
 }
 
-#mario_cart1{
+#mario_cart1 {
   position: absolute;
   top: 216px;
   left: -266px;
   transform: rotate(-104deg);
 }
 
-#mario_bomb1{
+#mario_bomb1 {
   position: absolute;
   top: 519px;
   left: -17px;
   transform: rotate(-138deg);
 }
 
-#mario_mountain1{
+#mario_mountain1 {
   position: absolute;
-  top: 519px;
-  left: -17px;
-  transform: rotate(-138deg);
+  top: 453px;
+  left: -11px;
+  transform: rotate(-151deg);
+}
+
+#mario_mountain2 {
+  position: absolute;
+  top: 489px;
+  left: 185px;
+  transform: rotate(-194deg);
+}
+
+#mario_mountain3 {
+  position: absolute;
+  top: 336px;
+  left: -141px;
+  transform: rotate(-116deg);
+}
+
+#mario_mountain4 {
+  position: absolute;
+  top: -179px;
+  left: 223px;
+  transform: rotate(14deg);
+}
+
+#mario_mountain5 {
+  position: absolute;
+  top: 42px;
+  left: 505px;
+  transform: rotate(81deg);
+}
+
+#mario_mountain6 {
+  position: absolute;
+  top: -151px;
+  left: 435px;
+  transform: rotate(50deg);
+}
+
+#mario_sun1{
+  position: absolute;
+  top: 433px;
+  left: 759px;
+  transform: rotate(478deg);
+}
+
+#mario_sun2{
+  position: absolute;
+  top: -400px;
+  left: -540px;
+  transform: rotate(-52deg);
+}
+
+#mario_moon1{
+  position: absolute;
+  top: -520px;
+  left: 643px;
+  transform: rotate(-324deg);
+}
+
+#mario_moon2{
+  position: absolute;
+  top: 590px;
+  left: -395px;
+  transform: rotate(234deg);
 }

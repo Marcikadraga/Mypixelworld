@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
-import drawings from '../drawings.json';
-import './marcioWorldAnimation.css';
+import drawings from '../datas/drawings.json';
+import '../css/MarioWorldAnimation.css';
 
 
 function drawImage(canvas, sizeOfPixel, colors) {

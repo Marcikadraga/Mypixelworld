@@ -1,5 +1,5 @@
 import './App.css';
-import MarioWorldAnimation from './marioWorldAnimation';
+import MarioWorldAnimation from '../src/components/marioWorldAnimation';
 
 function App() {
 
