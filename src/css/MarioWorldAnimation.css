@@ -1,0 +1,204 @@
+.circle-container {
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-1{
+  width: 501px;
+  height: 501px;
+  background-color: rgb(76, 233, 76);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 350px;
+  animation: circle1Animation 100s linear infinite;
+  z-index: 4;
+  transform: rotate(20deg);
+}
+
+.circle-2 {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(76, 233, 76);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 350px;
+  animation: circle2Animation 100s linear infinite;
+  z-index: 3;
+  transform: rotate(20deg);
+}
+
+.circle-3 {
+  width: 550px;
+  height: 550px;
+  background-color: rgb(76, 233, 76);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 350px;
+  animation: circle3Animation 10s linear infinite;
+  z-index: 3;
+  transform: rotate(20deg);
+}
+
+.circle-6 {
+  width: 550px;
+  height: 550px;
+  background-color: rgb(76, 233, 76);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 350px;
+  animation: circle3Animation 10s linear infinite;
+  z-index: 3;
+  transform: rotate(20deg);
+}
+
+ @keyframes circle1Animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle2Animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+} 
+
+ @keyframes circle3Animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+#pipe-1{
+  position: absolute;
+  top: 326px;
+  left: 448px;
+  transform: rotate(125deg);
+  z-index: 5;
+}
+
+#pipe-2{
+  position: absolute;
+  top: -142px;
+  left: -216px;
+  transform: rotate(-55deg);
+  z-index: 4;
+}
+
+#cube-1{
+  position: absolute;
+  top: -472px;
+  left: 67px;
+  transform: rotate(-11deg);
+}
+
+#cube-2{
+  position: absolute;
+  top: -476px;
+  left: 261px;
+  transform: rotate(7deg);
+}
+
+#cube-3{
+  position: absolute;
+  top: -429px;
+  left: 446px;
+  transform: rotate(23deg);
+}
+
+#flower-1{
+  position: absolute;
+  top: -631px;
+  left: 282px;
+  transform: rotate(7deg);
+}
+
+#mushroom-1{
+  position: absolute;
+  top: -139px;
+  left: 14px;
+  transform: rotate(-21deg);
+}
+
+#mushroom-2{
+  position: absolute;
+  top: 483px;
+  left: 151px;
+  transform: rotate(182deg);
+}
+
+#cloud1{
+  position: absolute;
+  top: -494px;
+  left: -173px;
+  transform: rotate(-29deg);
+}
+
+#cloud2{
+  position: absolute;
+    top: -494px;
+    left: 532px;
+    transform: rotate(29deg);
+}
+
+#cloud3{
+  position: absolute;
+  top: 169px;
+  left: -619px;
+  transform: rotate(270deg);
+}
+
+#cloud4{
+  position: absolute;
+  top: 169px;
+  left: 942px;
+  transform: rotate(90deg);
+}
+
+#cloud5{
+  position: absolute;
+  top: 874px;
+  left: -173px;
+  transform: rotate(207deg);
+}
+
+#cloud6{
+  position: absolute;
+  top: 874px;
+  left: 532px;
+  transform: rotate(150deg);
+}
+
+#mario_cart1{
+  position: absolute;
+  top: 216px;
+  left: -266px;
+  transform: rotate(-104deg);
+}
+
+#mario_bomb1{
+  position: absolute;
+  top: 519px;
+  left: -17px;
+  transform: rotate(-138deg);
+}
+
+#mario_mountain1{
+  position: absolute;
+  top: 519px;
+  left: -17px;
+  transform: rotate(-138deg);
+}
