@@ -6,12 +6,12 @@ import '../css/MarioWorldAnimation.css';
 function drawImage(canvas, sizeOfPixel, colors) {
   var ctx = canvas.getContext("2d");
 
-  for (let i = 0; i < colors.drawingTableColors[0].length; i++) {
-    for (let j = 0; j < colors.drawingTableColors.length; j++) {
-      ctx.fillStyle = "rgb(" + colors.uniqueColors[colors.drawingTableColors[j][i]].toString() + ")";
+  colors.drawingTableColors.forEach((row, j) => {
+    row.forEach((colorIndex, i) => {
+      ctx.fillStyle = "rgb(" + colors.uniqueColors[colorIndex].toString() + ")";
       ctx.fillRect(i * sizeOfPixel, j * sizeOfPixel, sizeOfPixel, sizeOfPixel);
-    }
-  }
+    });
+  });
 }
 
 function MarioWorldAnimation() {
