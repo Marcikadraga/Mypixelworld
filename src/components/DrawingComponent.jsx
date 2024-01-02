@@ -21,7 +21,7 @@ export function DrawingComponent({ drawing }) {
             }
         }
 
-        getDrawing(drawing.name, canvasRef, 1);
+        getDrawing(drawing.name, canvasRef, 10);
     }, [drawing.name]);
 
     return (
