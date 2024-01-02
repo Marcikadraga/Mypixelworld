@@ -1,18 +1,7 @@
 import { useRef, useEffect } from 'react';
 import drawings from '../datas/drawings.json';
 import '../css/MarioWorldAnimation.css';
-
-
-function drawImage(canvas, sizeOfPixel, colors) {
-  var ctx = canvas.getContext("2d");
-
-  for (let i = 0; i < colors.drawingTableColors[0].length; i++) {
-    for (let j = 0; j < colors.drawingTableColors.length; j++) {
-      ctx.fillStyle = "rgb(" + colors.uniqueColors[colors.drawingTableColors[j][i]].toString() + ")";
-      ctx.fillRect(i * sizeOfPixel, j * sizeOfPixel, sizeOfPixel, sizeOfPixel);
-    }
-  }
-}
+import { DrawImage } from '../Utility/DrawImage';
 
 function MarioWorldAnimation() {
 
@@ -64,7 +53,7 @@ function MarioWorldAnimation() {
         if (canvas) {
           canvas.width = parsedData.drawingTableColors[0].length * pixelSize;
           canvas.height = parsedData.drawingTableColors.length * pixelSize;
-          drawImage(canvas, pixelSize, parsedData);
+          DrawImage(canvas, pixelSize, parsedData);
         }
       }
     }

@@ -1,0 +1,15 @@
+/* Header.css */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+  
+  .nav-link {
+    font-size: 24px; 
+    font-family: 'Roboto', sans-serif;
+  }
+  

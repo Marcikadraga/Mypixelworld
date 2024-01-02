@@ -4,7 +4,7 @@ body{
 
 .circle-container {
   width: 100%;
-  height: 100vh;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ body{
   background-color: rgb(76, 233, 76);
   border-radius: 50%;
   position: fixed;
-  bottom: -350px;
+  bottom: -400px;
   animation: circle1Animation 100s linear infinite;
   z-index: 4;
   transform: rotate(20deg);
@@ -28,7 +28,7 @@ body{
   background-color: rgb(76, 233, 76);
   border-radius: 50%;
   position: fixed;
-  bottom: -350px;
+  bottom: -400px;
   animation: circle2Animation 100s linear infinite;
   z-index: 3;
   transform: rotate(20deg);
@@ -40,7 +40,7 @@ body{
   background-color: rgb(76, 233, 76);
   border-radius: 50%;
   position: fixed;
-  bottom: -350px;
+  bottom: -400px;
   animation: circle3Animation 10s linear infinite;
   z-index: 3;
   transform: rotate(20deg);
@@ -52,7 +52,7 @@ body{
   background-color: rgb(76, 233, 76);
   border-radius: 50%;
   position: fixed;
-  bottom: -350px;
+  bottom: -400px;
   animation: circle6Animation 100s linear infinite;
   z-index: 0;
   transform: rotate(200deg);
@@ -64,7 +64,7 @@ body{
   background-color: rgb(76, 233, 76);
   border-radius: 50%;
   position: fixed;
-  bottom: -350px;
+  bottom: -400px;
   animation: circle6Animation 500s linear infinite;
   z-index: 0;
   transform: rotate(200deg);
