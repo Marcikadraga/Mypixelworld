@@ -9,7 +9,6 @@ const Header = () => {
         <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
           <ul className="navbar-nav">
             <NavItem to="/" label="Home" />
-            <NavItem to="/drawingTable" label="drawingTable" />
             <NavItem to="/adminPage" label="admin" />
           </ul>
         </div>
